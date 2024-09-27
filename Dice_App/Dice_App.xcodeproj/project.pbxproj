@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		181758FE2B9F11C600184531 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 181758FD2B9F11C600184531 /* RealityKitContent */; };
+		181759002B9F11C600184531 /* Dice_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181758FF2B9F11C600184531 /* Dice_AppApp.swift */; };
+		181759062B9F11C800184531 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 181759052B9F11C800184531 /* Assets.xcassets */; };
+		181759092B9F11C800184531 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 181759082B9F11C800184531 /* Preview Assets.xcassets */; };
+		181759132B9F16F400184531 /* FrameworkTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181759122B9F16F400184531 /* FrameworkTitleView.swift */; };
+		181759162B9F170600184531 /* AFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181759142B9F170600184531 /* AFButton.swift */; };
+		181759172B9F170600184531 /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181759152B9F170600184531 /* XDismissButton.swift */; };
+		181759192B9F171B00184531 /* Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181759182B9F171B00184531 /* Framework.swift */; };
+		1817591B2B9F172300184531 /* FrameworkDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1817591A2B9F172300184531 /* FrameworkDetailsView.swift */; };
+		1817591E2B9F172A00184531 /* FrameworkListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1817591C2B9F172A00184531 /* FrameworkListViewModel.swift */; };
+		1817591F2B9F172A00184531 /* FrameworkListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1817591D2B9F172A00184531 /* FrameworkListView.swift */; };
+		181759212B9F173B00184531 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 181759202B9F173B00184531 /* Assets.xcassets */; };
+		181759232B9F174E00184531 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181759222B9F174D00184531 /* SafariView.swift */; };
+		181759322B9F292500184531 /* FrameworkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181759312B9F292500184531 /* FrameworkGridView.swift */; };
+		181759342B9F29A100184531 /* FrameworkDetailsViewGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181759332B9F29A100184531 /* FrameworkDetailsViewGrid.swift */; };
+		181759362B9F29C200184531 /* FrameworkTitleViewGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181759352B9F29C200184531 /* FrameworkTitleViewGrid.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		181758F82B9F11C600184531 /* Dice_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dice_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		181758FC2B9F11C600184531 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
+		181758FF2B9F11C600184531 /* Dice_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dice_AppApp.swift; sourceTree = "<group>"; };
+		181759052B9F11C800184531 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		181759082B9F11C800184531 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1817590A2B9F11C800184531 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		181759122B9F16F400184531 /* FrameworkTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameworkTitleView.swift; sourceTree = "<group>"; };
+		181759142B9F170600184531 /* AFButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFButton.swift; sourceTree = "<group>"; };
+		181759152B9F170600184531 /* XDismissButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
+		181759182B9F171B00184531 /* Framework.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
+		1817591A2B9F172300184531 /* FrameworkDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameworkDetailsView.swift; sourceTree = "<group>"; };
+		1817591C2B9F172A00184531 /* FrameworkListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameworkListViewModel.swift; sourceTree = "<group>"; };
+		1817591D2B9F172A00184531 /* FrameworkListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameworkListView.swift; sourceTree = "<group>"; };
+		181759202B9F173B00184531 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../SwiftUI_Projects/ListViewProjects/Apple_Framework_App_List/Apple_Framework_App/Assets.xcassets; sourceTree = "<group>"; };
+		181759222B9F174D00184531 /* SafariView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		181759312B9F292500184531 /* FrameworkGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridView.swift; sourceTree = "<group>"; };
+		181759332B9F29A100184531 /* FrameworkDetailsViewGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailsViewGrid.swift; sourceTree = "<group>"; };
+		181759352B9F29C200184531 /* FrameworkTitleViewGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkTitleViewGrid.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		181758F52B9F11C600184531 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				181758FE2B9F11C600184531 /* RealityKitContent in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		181758EF2B9F11C600184531 = {
+			isa = PBXGroup;
+			children = (
+				181758FA2B9F11C600184531 /* Dice_App */,
+				181758FB2B9F11C600184531 /* Packages */,
+				181758F92B9F11C600184531 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		181758F92B9F11C600184531 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				181758F82B9F11C600184531 /* Dice_App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		181758FA2B9F11C600184531 /* Dice_App */ = {
+			isa = PBXGroup;
+			children = (
+				181758FF2B9F11C600184531 /* Dice_AppApp.swift */,
+				181759242B9F1C3C00184531 /* FrameworkList */,
+				1817592E2B9F25F000184531 /* GridFiles */,
+				181759052B9F11C800184531 /* Assets.xcassets */,
+				181759202B9F173B00184531 /* Assets.xcassets */,
+				1817590A2B9F11C800184531 /* Info.plist */,
+				181759072B9F11C800184531 /* Preview Content */,
+			);
+			path = Dice_App;
+			sourceTree = "<group>";
+		};
+		181758FB2B9F11C600184531 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				181758FC2B9F11C600184531 /* RealityKitContent */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		181759072B9F11C800184531 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				181759082B9F11C800184531 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		181759242B9F1C3C00184531 /* FrameworkList */ = {
+			isa = PBXGroup;
+			children = (
+				181759302B9F28FA00184531 /* ListView */,
+				1817592F2B9F28F000184531 /* GridView */,
+				181759182B9F171B00184531 /* Framework.swift */,
+				181759142B9F170600184531 /* AFButton.swift */,
+				181759152B9F170600184531 /* XDismissButton.swift */,
+				181759222B9F174D00184531 /* SafariView.swift */,
+			);
+			path = FrameworkList;
+			sourceTree = "<group>";
+		};
+		1817592E2B9F25F000184531 /* GridFiles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GridFiles;
+			sourceTree = "<group>";
+		};
+		1817592F2B9F28F000184531 /* GridView */ = {
+			isa = PBXGroup;
+			children = (
+				181759312B9F292500184531 /* FrameworkGridView.swift */,
+				181759332B9F29A100184531 /* FrameworkDetailsViewGrid.swift */,
+				181759352B9F29C200184531 /* FrameworkTitleViewGrid.swift */,
+			);
+			path = GridView;
+			sourceTree = "<group>";
+		};
+		181759302B9F28FA00184531 /* ListView */ = {
+			isa = PBXGroup;
+			children = (
+				1817591C2B9F172A00184531 /* FrameworkListViewModel.swift */,
+				181759122B9F16F400184531 /* FrameworkTitleView.swift */,
+				1817591D2B9F172A00184531 /* FrameworkListView.swift */,
+				1817591A2B9F172300184531 /* FrameworkDetailsView.swift */,
+			);
+			path = ListView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		181758F72B9F11C600184531 /* Dice_App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1817590D2B9F11C800184531 /* Build configuration list for PBXNativeTarget "Dice_App" */;
+			buildPhases = (
+				181758F42B9F11C600184531 /* Sources */,
+				181758F52B9F11C600184531 /* Frameworks */,
+				181758F62B9F11C600184531 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dice_App;
+			packageProductDependencies = (
+				181758FD2B9F11C600184531 /* RealityKitContent */,
+			);
+			productName = Dice_App;
+			productReference = 181758F82B9F11C600184531 /* Dice_App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		181758F02B9F11C600184531 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					181758F72B9F11C600184531 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 181758F32B9F11C600184531 /* Build configuration list for PBXProject "Dice_App" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 181758EF2B9F11C600184531;
+			productRefGroup = 181758F92B9F11C600184531 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				181758F72B9F11C600184531 /* Dice_App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		181758F62B9F11C600184531 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				181759092B9F11C800184531 /* Preview Assets.xcassets in Resources */,
+				181759212B9F173B00184531 /* Assets.xcassets in Resources */,
+				181759062B9F11C800184531 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		181758F42B9F11C600184531 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				181759192B9F171B00184531 /* Framework.swift in Sources */,
+				181759232B9F174E00184531 /* SafariView.swift in Sources */,
+				181759002B9F11C600184531 /* Dice_AppApp.swift in Sources */,
+				181759342B9F29A100184531 /* FrameworkDetailsViewGrid.swift in Sources */,
+				181759132B9F16F400184531 /* FrameworkTitleView.swift in Sources */,
+				1817591B2B9F172300184531 /* FrameworkDetailsView.swift in Sources */,
+				1817591E2B9F172A00184531 /* FrameworkListViewModel.swift in Sources */,
+				181759362B9F29C200184531 /* FrameworkTitleViewGrid.swift in Sources */,
+				181759162B9F170600184531 /* AFButton.swift in Sources */,
+				1817591F2B9F172A00184531 /* FrameworkListView.swift in Sources */,
+				181759322B9F292500184531 /* FrameworkGridView.swift in Sources */,
+				181759172B9F170600184531 /* XDismissButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1817590B2B9F11C800184531 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = xros;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				XROS_DEPLOYMENT_TARGET = 1.1;
+			};
+			name = Debug;
+		};
+		1817590C2B9F11C800184531 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = xros;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				XROS_DEPLOYMENT_TARGET = 1.1;
+			};
+			name = Release;
+		};
+		1817590E2B9F11C800184531 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Dice_App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = iAppDocs;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Dice-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Debug;
+		};
+		1817590F2B9F11C800184531 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Dice_App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = iAppDocs;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Dice-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		181758F32B9F11C600184531 /* Build configuration list for PBXProject "Dice_App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1817590B2B9F11C800184531 /* Debug */,
+				1817590C2B9F11C800184531 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1817590D2B9F11C800184531 /* Build configuration list for PBXNativeTarget "Dice_App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1817590E2B9F11C800184531 /* Debug */,
+				1817590F2B9F11C800184531 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		181758FD2B9F11C600184531 /* RealityKitContent */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RealityKitContent;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 181758F02B9F11C600184531 /* Project object */;
+}

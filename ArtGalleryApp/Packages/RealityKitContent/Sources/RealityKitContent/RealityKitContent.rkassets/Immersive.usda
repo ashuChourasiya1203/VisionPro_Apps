@@ -1,0 +1,461 @@
+#usda 1.0
+(
+    defaultPrim = "Root"
+    metersPerUnit = 1
+    upAxis = "Y"
+)
+
+def Xform "Root"
+{
+    reorder nameChildren = ["Sphere_Left", "Sphere_Right", "GridMaterial"]
+    float3 xformOp:translate = (0, -10.7114105, 0)
+    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+    def "GridMaterial" (
+        active = true
+        prepend references = @Materials/GridMaterial.usda@
+    )
+    {
+        float3 xformOp:scale = (1, 1, 1)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "Virtual_Gallery_scene_01" (
+        active = true
+        prepend references = @Virtual_Gallery_scene_01.usdz@
+    )
+    {
+        float3 xformOp:scale = (0.1, 0.1, 0.1)
+        float3 xformOp:translate = (0.82232475, 0.17625237, 0.25217056)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "Wandmalerei" (
+        active = true
+        prepend references = @Wandmalerei.usdz@
+    )
+    {
+        float3 xformOp:scale = (0.016, 0.016, 0.016)
+        float3 xformOp:translate = (-3.487183, 7.6206183, -1.3786399)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "Wandmalerei_1" (
+        active = true
+        prepend references = @Wandmalerei.usdz@
+    )
+    {
+        float3 xformOp:scale = (0.016, 0.016, 0.016)
+        float3 xformOp:translate = (5.6309423, 7.547017, -1.378639)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        over "Materials"
+        {
+            over "Ortsbild_O_Material_u1_v1"
+            {
+                token outputs:surface.connect = </Root/Wandmalerei_1/Materials/Ortsbild_O_Material_u1_v1/pbr_shader.outputs:surface>
+
+                over "pbr_shader"
+                {
+                    color3f inputs:diffuseColor.connect = </Root/Wandmalerei_1/Materials/Ortsbild_O_Material_u1_v1/tex_base.outputs:rgb>
+                }
+
+                over "tex_base"
+                {
+                    float2 inputs:st.connect = </Root/Wandmalerei_1/Materials/Ortsbild_O_Material_u1_v1/uvset0.outputs:result>
+                }
+            }
+        }
+    }
+
+    def "Wandmalerei_2" (
+        active = true
+        prepend references = @Wandmalerei.usdz@
+    )
+    {
+        float3 xformOp:scale = (0.016, 0.016, 0.016)
+        float3 xformOp:translate = (22.8735, 8.142603, -9.728565)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        over "Materials"
+        {
+            over "Ortsbild_O_Material_u1_v1"
+            {
+                token outputs:surface.connect = </Root/Wandmalerei_2/Materials/Ortsbild_O_Material_u1_v1/pbr_shader.outputs:surface>
+
+                over "pbr_shader"
+                {
+                    color3f inputs:diffuseColor.connect = </Root/Wandmalerei_2/Materials/Ortsbild_O_Material_u1_v1/tex_base.outputs:rgb>
+                }
+
+                over "tex_base"
+                {
+                    float2 inputs:st.connect = </Root/Wandmalerei_2/Materials/Ortsbild_O_Material_u1_v1/uvset0.outputs:result>
+                }
+            }
+        }
+    }
+
+    def "Victorian_Wars_Framed_Wall_Art_Print_Multi" (
+        active = true
+        customData = {
+            float3 rotationEulerHint = (0, 1.5707963, 0)
+        }
+        prepend references = @Victorian_Wars_Framed_Wall_Art_Print_Multi.usdz@
+    )
+    {
+        quatf xformOp:orient = (0.70710677, 0, 0.70710677, 0)
+        float3 xformOp:scale = (0.01, 0.01, 0.01)
+        float3 xformOp:translate = (-7.296723, -6.5107994, 2.5022378)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "Victorian_Wars_Framed_Wall_Art_Print_Multi_1" (
+        active = true
+        customData = {
+            float3 rotationEulerHint = (0, 1.5707963, 0)
+        }
+        prepend references = @Victorian_Wars_Framed_Wall_Art_Print_Multi.usdz@
+    )
+    {
+        quatf xformOp:orient = (0.7071067, 0, 0.70710677, 0)
+        float3 xformOp:scale = (0.014, 0.014, 0.014)
+        float3 xformOp:translate = (-15.509951, -10.538179, 24.322523)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        over "Materials"
+        {
+            over "PRINT"
+            {
+                token outputs:surface.connect = </Root/Victorian_Wars_Framed_Wall_Art_Print_Multi_1/Materials/PRINT/pbr_shader.outputs:surface>
+
+                over "pbr_shader"
+                {
+                    color3f inputs:diffuseColor.connect = </Root/Victorian_Wars_Framed_Wall_Art_Print_Multi_1/Materials/PRINT/tex_base.outputs:rgb>
+                }
+
+                over "tex_base"
+                {
+                    float2 inputs:st.connect = </Root/Victorian_Wars_Framed_Wall_Art_Print_Multi_1/Materials/PRINT/uvset0.outputs:result>
+                }
+            }
+
+            over "FRAME"
+            {
+                token outputs:surface.connect = </Root/Victorian_Wars_Framed_Wall_Art_Print_Multi_1/Materials/FRAME/pbr_shader.outputs:surface>
+
+                over "pbr_shader"
+                {
+                    color3f inputs:diffuseColor.connect = </Root/Victorian_Wars_Framed_Wall_Art_Print_Multi_1/Materials/FRAME/tex_base.outputs:rgb>
+                }
+
+                over "tex_base"
+                {
+                    float2 inputs:st.connect = </Root/Victorian_Wars_Framed_Wall_Art_Print_Multi_1/Materials/FRAME/uvset0.outputs:result>
+                }
+            }
+        }
+    }
+
+    def "Victorian_Wars_Framed_Wall_Art_Print_Multi_2" (
+        active = true
+        customData = {
+            float3 rotationEulerHint = (0, 3.1415927, 0)
+        }
+        prepend references = @Victorian_Wars_Framed_Wall_Art_Print_Multi.usdz@
+    )
+    {
+        quatf xformOp:orient = (-4.371139e-8, 0, 1, 0)
+        float3 xformOp:scale = (0.014, 0.014000003, 0.014)
+        float3 xformOp:translate = (-1.6546116, -9.981316, 35.042854)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        over "Materials"
+        {
+            over "PRINT"
+            {
+                token outputs:surface.connect = </Root/Victorian_Wars_Framed_Wall_Art_Print_Multi_2/Materials/PRINT/pbr_shader.outputs:surface>
+
+                over "pbr_shader"
+                {
+                    color3f inputs:diffuseColor.connect = </Root/Victorian_Wars_Framed_Wall_Art_Print_Multi_2/Materials/PRINT/tex_base.outputs:rgb>
+                }
+
+                over "tex_base"
+                {
+                    float2 inputs:st.connect = </Root/Victorian_Wars_Framed_Wall_Art_Print_Multi_2/Materials/PRINT/uvset0.outputs:result>
+                }
+            }
+
+            over "FRAME"
+            {
+                token outputs:surface.connect = </Root/Victorian_Wars_Framed_Wall_Art_Print_Multi_2/Materials/FRAME/pbr_shader.outputs:surface>
+
+                over "pbr_shader"
+                {
+                    color3f inputs:diffuseColor.connect = </Root/Victorian_Wars_Framed_Wall_Art_Print_Multi_2/Materials/FRAME/tex_base.outputs:rgb>
+                }
+
+                over "tex_base"
+                {
+                    float2 inputs:st.connect = </Root/Victorian_Wars_Framed_Wall_Art_Print_Multi_2/Materials/FRAME/uvset0.outputs:result>
+                }
+            }
+        }
+    }
+
+    def "Victorian_Wars_Framed_Wall_Art_Print_Multi_3" (
+        active = true
+        customData = {
+            float3 rotationEulerHint = (0, 3.1415927, 0)
+        }
+        prepend references = @Victorian_Wars_Framed_Wall_Art_Print_Multi.usdz@
+    )
+    {
+        quatf xformOp:orient = (-4.371139e-8, 0, 1, 0)
+        float3 xformOp:scale = (0.013, 0.013000002, 0.013)
+        float3 xformOp:translate = (19.918964, -9.700151, 5.909957)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        over "Materials"
+        {
+            over "PRINT"
+            {
+                token outputs:surface.connect = </Root/Victorian_Wars_Framed_Wall_Art_Print_Multi_3/Materials/PRINT/pbr_shader.outputs:surface>
+
+                over "pbr_shader"
+                {
+                    color3f inputs:diffuseColor.connect = </Root/Victorian_Wars_Framed_Wall_Art_Print_Multi_3/Materials/PRINT/tex_base.outputs:rgb>
+                }
+
+                over "tex_base"
+                {
+                    float2 inputs:st.connect = </Root/Victorian_Wars_Framed_Wall_Art_Print_Multi_3/Materials/PRINT/uvset0.outputs:result>
+                }
+            }
+
+            over "FRAME"
+            {
+                token outputs:surface.connect = </Root/Victorian_Wars_Framed_Wall_Art_Print_Multi_3/Materials/FRAME/pbr_shader.outputs:surface>
+
+                over "pbr_shader"
+                {
+                    color3f inputs:diffuseColor.connect = </Root/Victorian_Wars_Framed_Wall_Art_Print_Multi_3/Materials/FRAME/tex_base.outputs:rgb>
+                }
+
+                over "tex_base"
+                {
+                    float2 inputs:st.connect = </Root/Victorian_Wars_Framed_Wall_Art_Print_Multi_3/Materials/FRAME/uvset0.outputs:result>
+                }
+            }
+        }
+    }
+
+    def "Wandmalerei_3" (
+        active = true
+        customData = {
+            float3 rotationEulerHint = (0, 4.712389, 0)
+        }
+        prepend references = @Wandmalerei.usdz@
+    )
+    {
+        quatf xformOp:orient = (0.70710677, 0, -0.70710677, 0)
+        float3 xformOp:scale = (0.016, 0.016, 0.016)
+        float3 xformOp:translate = (11.225829, 8.782777, 18.686941)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        over "Materials"
+        {
+            over "Ortsbild_O_Material_u1_v1"
+            {
+                token outputs:surface.connect = </Root/Wandmalerei_3/Materials/Ortsbild_O_Material_u1_v1/pbr_shader.outputs:surface>
+
+                over "pbr_shader"
+                {
+                    color3f inputs:diffuseColor.connect = </Root/Wandmalerei_3/Materials/Ortsbild_O_Material_u1_v1/tex_base.outputs:rgb>
+                }
+
+                over "tex_base"
+                {
+                    float2 inputs:st.connect = </Root/Wandmalerei_3/Materials/Ortsbild_O_Material_u1_v1/uvset0.outputs:result>
+                }
+            }
+        }
+    }
+
+    def "Wandmalerei_4" (
+        active = true
+        customData = {
+            float3 rotationEulerHint = (0, 4.712389, 0)
+        }
+        prepend references = @Wandmalerei.usdz@
+    )
+    {
+        quatf xformOp:orient = (0.70710677, 0, -0.70710677, 0)
+        float3 xformOp:scale = (0.014, 0.014, 0.014)
+        float3 xformOp:translate = (0.48208544, 6.4278784, 8.639549)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        over "Materials"
+        {
+            over "Ortsbild_O_Material_u1_v1"
+            {
+                token outputs:surface.connect = </Root/Wandmalerei_4/Materials/Ortsbild_O_Material_u1_v1/pbr_shader.outputs:surface>
+
+                over "pbr_shader"
+                {
+                    color3f inputs:diffuseColor.connect = </Root/Wandmalerei_4/Materials/Ortsbild_O_Material_u1_v1/tex_base.outputs:rgb>
+                }
+
+                over "tex_base"
+                {
+                    float2 inputs:st.connect = </Root/Wandmalerei_4/Materials/Ortsbild_O_Material_u1_v1/uvset0.outputs:result>
+                }
+            }
+        }
+    }
+
+    def "Wandmalerei_5" (
+        active = true
+        customData = {
+            float3 rotationEulerHint = (0, 4.712389, 0)
+        }
+        prepend references = @Wandmalerei.usdz@
+    )
+    {
+        quatf xformOp:orient = (0.70710677, 0, -0.70710677, 0)
+        float3 xformOp:scale = (0.014, 0.014, 0.014)
+        float3 xformOp:translate = (0.48208588, 6.4278784, 24.08988)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        over "Materials"
+        {
+            over "Ortsbild_O_Material_u1_v1"
+            {
+                token outputs:surface.connect = </Root/Wandmalerei_5/Materials/Ortsbild_O_Material_u1_v1/pbr_shader.outputs:surface>
+
+                over "pbr_shader"
+                {
+                    color3f inputs:diffuseColor.connect = </Root/Wandmalerei_5/Materials/Ortsbild_O_Material_u1_v1/tex_base.outputs:rgb>
+                }
+
+                over "tex_base"
+                {
+                    float2 inputs:st.connect = </Root/Wandmalerei_5/Materials/Ortsbild_O_Material_u1_v1/uvset0.outputs:result>
+                }
+            }
+        }
+    }
+
+    def "Victorian_Wars_Framed_Wall_Art_Print_Multi_4" (
+        active = true
+        customData = {
+            float3 rotationEulerHint = (0, 1.5707963, 0)
+        }
+        prepend references = @Victorian_Wars_Framed_Wall_Art_Print_Multi.usdz@
+    )
+    {
+        quatf xformOp:orient = (0.7071067, 0, 0.7071069, 0)
+        float3 xformOp:scale = (0.011, 0.011000003, 0.011)
+        float3 xformOp:translate = (1.1808447, -8.358021, 8.365709)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        over "Materials"
+        {
+            over "PRINT"
+            {
+                token outputs:surface.connect = </Root/Victorian_Wars_Framed_Wall_Art_Print_Multi_4/Materials/PRINT/pbr_shader.outputs:surface>
+
+                over "pbr_shader"
+                {
+                    color3f inputs:diffuseColor.connect = </Root/Victorian_Wars_Framed_Wall_Art_Print_Multi_4/Materials/PRINT/tex_base.outputs:rgb>
+                }
+
+                over "tex_base"
+                {
+                    float2 inputs:st.connect = </Root/Victorian_Wars_Framed_Wall_Art_Print_Multi_4/Materials/PRINT/uvset0.outputs:result>
+                }
+            }
+
+            over "FRAME"
+            {
+                token outputs:surface.connect = </Root/Victorian_Wars_Framed_Wall_Art_Print_Multi_4/Materials/FRAME/pbr_shader.outputs:surface>
+
+                over "pbr_shader"
+                {
+                    color3f inputs:diffuseColor.connect = </Root/Victorian_Wars_Framed_Wall_Art_Print_Multi_4/Materials/FRAME/tex_base.outputs:rgb>
+                }
+
+                over "tex_base"
+                {
+                    float2 inputs:st.connect = </Root/Victorian_Wars_Framed_Wall_Art_Print_Multi_4/Materials/FRAME/uvset0.outputs:result>
+                }
+            }
+        }
+    }
+
+    def "Wandmalerei_6" (
+        active = true
+        customData = {
+            float3 rotationEulerHint = (0, 1.5707963, 0)
+        }
+        prepend references = @Wandmalerei.usdz@
+    )
+    {
+        quatf xformOp:orient = (0.70710677, 0, 0.70710677, 0)
+        float3 xformOp:scale = (0.014, 0.014, 0.014)
+        float3 xformOp:translate = (1.1740558, 6.3013496, 23.83143)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        over "Materials"
+        {
+            over "Ortsbild_O_Material_u1_v1"
+            {
+                token outputs:surface.connect = </Root/Wandmalerei_6/Materials/Ortsbild_O_Material_u1_v1/pbr_shader.outputs:surface>
+
+                over "pbr_shader"
+                {
+                    color3f inputs:diffuseColor.connect = </Root/Wandmalerei_6/Materials/Ortsbild_O_Material_u1_v1/tex_base.outputs:rgb>
+                }
+
+                over "tex_base"
+                {
+                    float2 inputs:st.connect = </Root/Wandmalerei_6/Materials/Ortsbild_O_Material_u1_v1/uvset0.outputs:result>
+                }
+            }
+        }
+    }
+
+    def "Wandmalerei_7" (
+        active = true
+        customData = {
+            float3 rotationEulerHint = (0, 4.712389, 0)
+        }
+        prepend references = @Wandmalerei.usdz@
+    )
+    {
+        quatf xformOp:orient = (0.70710677, 0, -0.70710677, 0)
+        float3 xformOp:scale = (0.015200053, 0.015200053, 0.015200053)
+        float3 xformOp:translate = (26.268225, 6.5762973, -1.800601)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        over "Materials"
+        {
+            over "Ortsbild_O_Material_u1_v1"
+            {
+                token outputs:surface.connect = </Root/Wandmalerei_7/Materials/Ortsbild_O_Material_u1_v1/pbr_shader.outputs:surface>
+
+                over "pbr_shader"
+                {
+                    color3f inputs:diffuseColor.connect = </Root/Wandmalerei_7/Materials/Ortsbild_O_Material_u1_v1/tex_base.outputs:rgb>
+                }
+
+                over "tex_base"
+                {
+                    float2 inputs:st.connect = </Root/Wandmalerei_7/Materials/Ortsbild_O_Material_u1_v1/uvset0.outputs:result>
+                }
+            }
+        }
+    }
+}
+

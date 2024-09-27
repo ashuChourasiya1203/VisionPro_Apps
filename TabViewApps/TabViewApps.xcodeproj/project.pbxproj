@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18A14D6B2BA42DF800AFB6E8 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 18A14D6A2BA42DF800AFB6E8 /* RealityKitContent */; };
+		18A14D6D2BA42DF800AFB6E8 /* TabViewAppsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A14D6C2BA42DF800AFB6E8 /* TabViewAppsApp.swift */; };
+		18A14D6F2BA42DF800AFB6E8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A14D6E2BA42DF800AFB6E8 /* ContentView.swift */; };
+		18A14D712BA42DF800AFB6E8 /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A14D702BA42DF800AFB6E8 /* ImmersiveView.swift */; };
+		18A14D732BA42DF800AFB6E8 /* ImageBasedLighting.skybox in Resources */ = {isa = PBXBuildFile; fileRef = 18A14D722BA42DF800AFB6E8 /* ImageBasedLighting.skybox */; };
+		18A14D782BA42DFB00AFB6E8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18A14D772BA42DFB00AFB6E8 /* Preview Assets.xcassets */; };
+		18A14D802BA43D3A00AFB6E8 /* MusicPlayerAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A14D7F2BA43D3A00AFB6E8 /* MusicPlayerAppView.swift */; };
+		18A14D832BA43F6100AFB6E8 /* Pilots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A14D822BA43F6100AFB6E8 /* Pilots.swift */; };
+		18A14D862BA4474500AFB6E8 /* PilotHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A14D852BA4474500AFB6E8 /* PilotHost.swift */; };
+		18A14D882BA4477400AFB6E8 /* SportStaticsAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A14D872BA4477400AFB6E8 /* SportStaticsAppView.swift */; };
+		18A14D8C2BA447CF00AFB6E8 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A14D8B2BA447CF00AFB6E8 /* Enums.swift */; };
+		18A14D8E2BA447DF00AFB6E8 /* AppRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A14D8D2BA447DF00AFB6E8 /* AppRoute.swift */; };
+		18A14D912BA4482700AFB6E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18A14D902BA4482700AFB6E8 /* Assets.xcassets */; };
+		18A14D942BA4493F00AFB6E8 /* MusicAppTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A14D932BA4493F00AFB6E8 /* MusicAppTabView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		18A14D652BA42DF800AFB6E8 /* TabViewApps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabViewApps.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18A14D692BA42DF800AFB6E8 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
+		18A14D6C2BA42DF800AFB6E8 /* TabViewAppsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewAppsApp.swift; sourceTree = "<group>"; };
+		18A14D6E2BA42DF800AFB6E8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		18A14D702BA42DF800AFB6E8 /* ImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveView.swift; sourceTree = "<group>"; };
+		18A14D722BA42DF800AFB6E8 /* ImageBasedLighting.skybox */ = {isa = PBXFileReference; lastKnownFileType = file.skybox; path = ImageBasedLighting.skybox; sourceTree = "<group>"; };
+		18A14D772BA42DFB00AFB6E8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		18A14D792BA42DFB00AFB6E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18A14D7F2BA43D3A00AFB6E8 /* MusicPlayerAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerAppView.swift; sourceTree = "<group>"; };
+		18A14D822BA43F6100AFB6E8 /* Pilots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pilots.swift; sourceTree = "<group>"; };
+		18A14D852BA4474500AFB6E8 /* PilotHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilotHost.swift; sourceTree = "<group>"; };
+		18A14D872BA4477400AFB6E8 /* SportStaticsAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportStaticsAppView.swift; sourceTree = "<group>"; };
+		18A14D8B2BA447CF00AFB6E8 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		18A14D8D2BA447DF00AFB6E8 /* AppRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRoute.swift; sourceTree = "<group>"; };
+		18A14D902BA4482700AFB6E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18A14D932BA4493F00AFB6E8 /* MusicAppTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicAppTabView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18A14D622BA42DF800AFB6E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18A14D6B2BA42DF800AFB6E8 /* RealityKitContent in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18A14D5C2BA42DF800AFB6E8 = {
+			isa = PBXGroup;
+			children = (
+				18A14D672BA42DF800AFB6E8 /* TabViewApps */,
+				18A14D682BA42DF800AFB6E8 /* Packages */,
+				18A14D662BA42DF800AFB6E8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18A14D662BA42DF800AFB6E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18A14D652BA42DF800AFB6E8 /* TabViewApps.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18A14D672BA42DF800AFB6E8 /* TabViewApps */ = {
+			isa = PBXGroup;
+			children = (
+				18A14D6C2BA42DF800AFB6E8 /* TabViewAppsApp.swift */,
+				18A14D812BA43F5300AFB6E8 /* PilotManager */,
+				18A14D892BA447A100AFB6E8 /* Constant */,
+				18A14D8A2BA447B800AFB6E8 /* Views */,
+				18A14D8F2BA4480E00AFB6E8 /* Resources */,
+				18A14D792BA42DFB00AFB6E8 /* Info.plist */,
+				18A14D762BA42DFB00AFB6E8 /* Preview Content */,
+			);
+			path = TabViewApps;
+			sourceTree = "<group>";
+		};
+		18A14D682BA42DF800AFB6E8 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				18A14D692BA42DF800AFB6E8 /* RealityKitContent */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		18A14D762BA42DFB00AFB6E8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				18A14D772BA42DFB00AFB6E8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		18A14D812BA43F5300AFB6E8 /* PilotManager */ = {
+			isa = PBXGroup;
+			children = (
+				18A14D822BA43F6100AFB6E8 /* Pilots.swift */,
+				18A14D852BA4474500AFB6E8 /* PilotHost.swift */,
+			);
+			path = PilotManager;
+			sourceTree = "<group>";
+		};
+		18A14D842BA4472900AFB6E8 /* Apps */ = {
+			isa = PBXGroup;
+			children = (
+				18A14D872BA4477400AFB6E8 /* SportStaticsAppView.swift */,
+				18A14D7F2BA43D3A00AFB6E8 /* MusicPlayerAppView.swift */,
+			);
+			path = Apps;
+			sourceTree = "<group>";
+		};
+		18A14D892BA447A100AFB6E8 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				18A14D8B2BA447CF00AFB6E8 /* Enums.swift */,
+				18A14D8D2BA447DF00AFB6E8 /* AppRoute.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		18A14D8A2BA447B800AFB6E8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				18A14D6E2BA42DF800AFB6E8 /* ContentView.swift */,
+				18A14D702BA42DF800AFB6E8 /* ImmersiveView.swift */,
+				18A14D842BA4472900AFB6E8 /* Apps */,
+				18A14D922BA4492A00AFB6E8 /* TabViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		18A14D8F2BA4480E00AFB6E8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				18A14D902BA4482700AFB6E8 /* Assets.xcassets */,
+				18A14D722BA42DF800AFB6E8 /* ImageBasedLighting.skybox */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		18A14D922BA4492A00AFB6E8 /* TabViews */ = {
+			isa = PBXGroup;
+			children = (
+				18A14D932BA4493F00AFB6E8 /* MusicAppTabView.swift */,
+			);
+			path = TabViews;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18A14D642BA42DF800AFB6E8 /* TabViewApps */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18A14D7C2BA42DFB00AFB6E8 /* Build configuration list for PBXNativeTarget "TabViewApps" */;
+			buildPhases = (
+				18A14D612BA42DF800AFB6E8 /* Sources */,
+				18A14D622BA42DF800AFB6E8 /* Frameworks */,
+				18A14D632BA42DF800AFB6E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TabViewApps;
+			packageProductDependencies = (
+				18A14D6A2BA42DF800AFB6E8 /* RealityKitContent */,
+			);
+			productName = TabViewApps;
+			productReference = 18A14D652BA42DF800AFB6E8 /* TabViewApps.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18A14D5D2BA42DF800AFB6E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					18A14D642BA42DF800AFB6E8 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 18A14D602BA42DF800AFB6E8 /* Build configuration list for PBXProject "TabViewApps" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18A14D5C2BA42DF800AFB6E8;
+			productRefGroup = 18A14D662BA42DF800AFB6E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18A14D642BA42DF800AFB6E8 /* TabViewApps */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18A14D632BA42DF800AFB6E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18A14D782BA42DFB00AFB6E8 /* Preview Assets.xcassets in Resources */,
+				18A14D912BA4482700AFB6E8 /* Assets.xcassets in Resources */,
+				18A14D732BA42DF800AFB6E8 /* ImageBasedLighting.skybox in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18A14D612BA42DF800AFB6E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18A14D6F2BA42DF800AFB6E8 /* ContentView.swift in Sources */,
+				18A14D6D2BA42DF800AFB6E8 /* TabViewAppsApp.swift in Sources */,
+				18A14D8E2BA447DF00AFB6E8 /* AppRoute.swift in Sources */,
+				18A14D882BA4477400AFB6E8 /* SportStaticsAppView.swift in Sources */,
+				18A14D832BA43F6100AFB6E8 /* Pilots.swift in Sources */,
+				18A14D802BA43D3A00AFB6E8 /* MusicPlayerAppView.swift in Sources */,
+				18A14D862BA4474500AFB6E8 /* PilotHost.swift in Sources */,
+				18A14D8C2BA447CF00AFB6E8 /* Enums.swift in Sources */,
+				18A14D942BA4493F00AFB6E8 /* MusicAppTabView.swift in Sources */,
+				18A14D712BA42DF800AFB6E8 /* ImmersiveView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		18A14D7A2BA42DFB00AFB6E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = xros;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				XROS_DEPLOYMENT_TARGET = 1.1;
+			};
+			name = Debug;
+		};
+		18A14D7B2BA42DFB00AFB6E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = xros;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				XROS_DEPLOYMENT_TARGET = 1.1;
+			};
+			name = Release;
+		};
+		18A14D7D2BA42DFB00AFB6E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TabViewApps/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = MultiApps;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TabViewApps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Debug;
+		};
+		18A14D7E2BA42DFB00AFB6E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TabViewApps/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = MultiApps;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TabViewApps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18A14D602BA42DF800AFB6E8 /* Build configuration list for PBXProject "TabViewApps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18A14D7A2BA42DFB00AFB6E8 /* Debug */,
+				18A14D7B2BA42DFB00AFB6E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18A14D7C2BA42DFB00AFB6E8 /* Build configuration list for PBXNativeTarget "TabViewApps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18A14D7D2BA42DFB00AFB6E8 /* Debug */,
+				18A14D7E2BA42DFB00AFB6E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		18A14D6A2BA42DF800AFB6E8 /* RealityKitContent */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RealityKitContent;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 18A14D5D2BA42DF800AFB6E8 /* Project object */;
+}
